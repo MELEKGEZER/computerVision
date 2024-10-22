@@ -1,0 +1,13 @@
+# Profil linklerini kaydedeceğimiz dosya yolu
+profil_linkleri = [
+    "https://facebook.com/profil1",
+    "https://facebook.com/profil2",
+    "https://facebook.com/profil3",
+    # Buraya 10 profil linki eklenecek
+]
+
+# Profil linklerini bir dosyaya kaydedelim
+dosya_yolu = "profil_linkleri.txt"
+with open(dosya_yolu, 'w') as dosya:
+    for link in profil_linkleri:
+        dosya.write(link + '\n')
